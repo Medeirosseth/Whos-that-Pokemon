@@ -6,7 +6,7 @@
 
 _This game utilizes the [PokeAPI](https://pokeapi.co/) to re-create the "Who's That Pokemon?" game._
 ————————————————————————————————————————
-![Pokemon](../assets/whostThatPokemon.png)
+![Pokemon](/whostThatPokemon.png)
 ————————————————————————————————————————
 
 ## Technologies Used
