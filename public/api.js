@@ -1,8 +1,17 @@
 window.getPokeData = async function() {
   const pokemon = await getPokemon();
   const randomPokemon = shuffle(pokemon);
-  const pokemonChoice = get4Pokemon(randomPokemon)
-  console.log(pokemonChoice)
+  const pokemonChoices = get4Pokemon(randomPokemon);
+  const [ firstPokemon ] = pokemonChoices;
+  const number = getPokemonNumber(firstPokemon)
+  const image = getPokemonImage(number) 
+return {
+  pokemonChoices,
+  correct: {
+    image,
+    name: firstPokemon.name
+  }
+}
 };
 
 
@@ -12,7 +21,7 @@ async function getPokemon() {
   console.log(pokemon)
 
   return pokemon.results
-}
+} 
 
 function shuffle(unshuffled) {
   const shuffled = unshuffled
@@ -27,4 +36,13 @@ function shuffle(unshuffled) {
 
 function get4Pokemon(randomPokemon){
   return randomPokemon.splice(0, 4);
+}
+
+function getPokemonNumber({ url }) {
+  const numberRegEx = /(\d*)\/$/
+  return (url.match(numberRegEx) || [])[1]
+}
+
+function getPokemonImage(number){
+  return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${number}.png`;
 }

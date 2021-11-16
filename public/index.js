@@ -7,4 +7,5 @@ playBtn.addEventListener('click', fetchData);
 
 async function fetchData() {
   gameData = await window.getPokeData();
+  console.log(gameData)
 }
