@@ -1,7 +1,8 @@
 window.getPokeData = async function() {
   const pokemon = await getPokemon();
   const randomPokemon = shuffle(pokemon);
-  console.log(randomPokemon)
+  const pokemonChoice = get4Pokemon(randomPokemon)
+  console.log(pokemonChoice)
 };
 
 
@@ -21,4 +22,9 @@ function shuffle(unshuffled) {
 
     return shuffled
 
+}
+
+
+function get4Pokemon(randomPokemon){
+  return randomPokemon.splice(0, 4);
 }
