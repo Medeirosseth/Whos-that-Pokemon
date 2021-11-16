@@ -6,7 +6,7 @@ window.getPokeData = async function() {
   const number = getPokemonNumber(firstPokemon)
   const image = getPokemonImage(number) 
 return {
-  pokemonChoices,
+  pokemonChoices: shuffle(pokemonChoices),
   correct: {
     image,
     name: firstPokemon.name
@@ -30,9 +30,7 @@ function shuffle(unshuffled) {
     .map(( {value }) => value);
 
     return shuffled
-
 }
-
 
 function get4Pokemon(randomPokemon){
   return randomPokemon.splice(0, 4);
