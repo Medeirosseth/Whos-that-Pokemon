@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+main{
+  position: relative;
+  width: 575px;
+  background-image: url('https://res.cloudinary.com/dzynqn10l/image/upload/v1633196203/Msc/pokemon-bg_ig4uv3.jpg');
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+#pokemon-container{
+  height: 355px;
+}
