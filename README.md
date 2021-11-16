@@ -1,4 +1,4 @@
-#### :pizza: Whos That Pokemon!? :pizza: 
+####  Whos That Pokemon!?
 
 #### By _**:neckbeard:Seth Medeiros**_
 
@@ -6,7 +6,7 @@
 
 _This game utilizes the [PokeAPI](https://pokeapi.co/) to re-create the "Who's That Pokemon?" game._
 ————————————————————————————————————————
-![Pokemon](/whostThatPokemon.png)
+![Pokemon](/Pokemon.png)
 ————————————————————————————————————————
 
 ## Technologies Used
@@ -16,7 +16,6 @@ _This game utilizes the [PokeAPI](https://pokeapi.co/) to re-create the "Who's T
 * _Javascript_
 * _Pokemon API_
 
-  
 ## Setup and Use
 
 ### Prerequisites
